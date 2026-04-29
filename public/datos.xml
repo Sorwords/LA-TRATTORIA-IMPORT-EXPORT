@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dishes>
+  <dish>
+    <id>11</id>
+    <name>Focaccia al Rosmarino</name>
+    <description>Pan focaccia artesanal con romero fresco, sal marina y aceite de oliva virgen extra.</description>
+    <price>5,90EUR</price>
+    <category>Entrantes</category>
+    <isPopular>false</isPopular>
+  </dish>
+  <dish>
+    <id>12</id>
+    <name>Tagliatelle al Tartufo</name>
+    <description>Pasta fresca artesanal con trufa negra rallada, mantequilla y parmesano reggiano.</description>
+    <price>18,90EUR</price>
+    <category>Pasta</category>
+    <isPopular>true</isPopular>
+  </dish>
+  <dish>
+    <id>13</id>
+    <name>Pizza Diavola</name>
+    <description>Base de tomate, mozzarella, salami picante y guindillas frescas.</description>
+    <price>13,90EUR</price>
+    <category>Pizzas</category>
+    <isPopular>true</isPopular>
+  </dish>
+  <dish>
+    <id>14</id>
+    <name>Filetto al Barolo</name>
+    <description>Solomillo de ternera con reduccion de vino Barolo, setas y pure de trufa.</description>
+    <price>26,90EUR</price>
+    <category>Carnes</category>
+    <isPopular>false</isPopular>
+  </dish>
+  <dish>
+    <id>15</id>
+    <name>Cannolo Siciliano</name> 
+    <description>Hojaldre crujiente relleno de ricotta dulce, pistachos y naranja confitada.</description>
+    <price>6,50EUR</price>
+    <category>Postres</category>
+    <isPopular>true</isPopular>
+  </dish>
+</dishes>

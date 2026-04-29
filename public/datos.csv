@@ -1,0 +1,6 @@
+id,name,description,price,category,isPopular
+11,"Focaccia al Rosmarino","Pan focaccia artesanal con romero fresco, sal marina y aceite de oliva virgen extra.","5,90€","Entrantes",false
+12,"Tagliatelle al Tartufo","Pasta fresca artesanal con trufa negra rallada, mantequilla y parmesano reggiano.","18,90€","Pasta",true
+13,"Pizza Diavola","Base de tomate, mozzarella, salami picante y guindillas frescas.","13,90€","Pizzas",true
+14,"Filetto al Barolo","Solomillo de ternera con reduccion de vino Barolo, setas y pure de trufa.","26,90€","Carnes",false
+15,"Cannolo Siciliano","Hojaldre crujiente relleno de ricotta dulce, pistachos y naranja confitada.","6,50€","Postres",true

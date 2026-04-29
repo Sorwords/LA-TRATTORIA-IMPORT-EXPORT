@@ -1,0 +1,356 @@
+/* ── ImportExport Page ───────────────────────────────────────────────────── */
+
+.ie-page {
+  min-height: 100vh;
+  background: var(--bg, #faf8f4);
+}
+
+/* Hero */
+.ie-hero {
+  background: var(--primary, #1a1a1a);
+  color: #fff;
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.ie-hero-text {
+  max-width: 580px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Actions grid */
+.ie-actions {
+  padding: 60px 0;
+}
+
+.ie-actions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .ie-actions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards */
+.ie-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.ie-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.ie-card-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--accent, #c8a96e);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.ie-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--primary, #1a1a1a);
+  margin: 0;
+}
+
+.ie-card-desc {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* Button group */
+.ie-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ie-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.ie-btn--json {
+  background: #f0f7ee;
+  color: #2d7a2d;
+  border-color: #b8ddb8;
+}
+
+.ie-btn--json:hover {
+  background: #2d7a2d;
+  color: #fff;
+}
+
+.ie-btn--csv {
+  background: #fff8ee;
+  color: #b07000;
+  border-color: #f0d080;
+}
+
+.ie-btn--csv:hover {
+  background: #b07000;
+  color: #fff;
+}
+
+.ie-btn--xml {
+  background: #eef3ff;
+  color: #2255cc;
+  border-color: #b0c4f0;
+}
+
+.ie-btn--xml:hover {
+  background: #2255cc;
+  color: #fff;
+}
+
+.ie-btn--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.ie-loading {
+  color: var(--accent, #c8a96e);
+  font-style: italic;
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+/* Table section */
+.ie-table-section {
+  padding: 0 0 80px;
+}
+
+.ie-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ie-table-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--primary, #1a1a1a);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ie-count {
+  background: var(--accent, #c8a96e);
+  color: #fff;
+  font-size: 0.85rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.ie-refresh-btn {
+  background: transparent;
+  border: 2px solid var(--primary, #1a1a1a);
+  color: var(--primary, #1a1a1a);
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ie-refresh-btn:hover {
+  background: var(--primary, #1a1a1a);
+  color: #fff;
+}
+
+.ie-empty {
+  text-align: center;
+  color: #999;
+  padding: 48px;
+  background: #fff;
+  border-radius: 12px;
+  border: 2px dashed #ddd;
+}
+
+.ie-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.ie-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.92rem;
+}
+
+.ie-table th {
+  background: var(--primary, #1a1a1a);
+  color: #fff;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ie-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0ece4;
+  color: #333;
+}
+
+.ie-table tr:last-child td {
+  border-bottom: none;
+}
+
+.ie-table tr:hover td {
+  background: #faf8f4;
+}
+
+.ie-td-id {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.ie-td-price {
+  font-weight: 700;
+  color: var(--cta, #8b1a1a);
+}
+
+.ie-category-badge {
+  background: #f0ece4;
+  color: #555;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.ie-delete-btn {
+  background: #fff0f0;
+  color: #c0392b;
+  border: 1px solid #f5c6c6;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ie-delete-btn:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
+/* Modal */
+.ie-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ie-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.25s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.ie-modal-icon {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  font-size: 1.5rem;
+  line-height: 52px;
+  text-align: center;
+}
+
+.ie-modal--success .ie-modal-icon {
+  background: #d4edda;
+  color: #2d7a2d;
+}
+
+.ie-modal--error .ie-modal-icon {
+  background: #f8d7da;
+  color: #c0392b;
+}
+
+.ie-modal-message {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.ie-modal-close {
+  background: var(--primary, #1a1a1a);
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.ie-modal-close:hover {
+  opacity: 0.85;
+}
